@@ -28,7 +28,7 @@ public class ComparisonE
 {
     public static void main(String[] args)
     {
-        int x = 10;
+       /*  int x = 10;
         int y = 20;
 
         // Equal to
@@ -54,19 +54,73 @@ public class ComparisonE
         // Less than or equal to
         boolean isLessOrEqual = (x <= y);
         System.out.println("Is Less or Equal: " + isLessOrEqual); // Output: Is Less or Equal: true
+        
+        */
 
 
-        // -------------------- Student Exercises --------------------
-        // 1. Create int a = 50, b = 25 and compare them.
+        System.out.println("-------------------- Student Exercises --------------------");
+        System.out.println("1. Create int a = 50, b = 25 and compare them.");
+        int a = 50;
+        int b = 25;
+        // Equal to
+        boolean isEqual = (a == b);
+        System.out.println("Is Equal: " + isEqual); // Output: Is Equal: false
+        // Not equal to
+        boolean isNotEqual = (a != b);
+        System.out.println("Is Not Equal: " + isNotEqual); // Output: Is Not Equal: true
+        // Greater than
+        boolean isGreater = (a > b);
+        System.out.println("Is Greater: " + isGreater); // Output: Is Greater: false
+        // Less than
+        boolean isLess = (a < b);
+        System.out.println("Is Less: " + isLess); // Output: Is Less: true
+        // Greater than or equal to
+        boolean isGreaterOrEqual = (a >= b);
+        System.out.println("Is Greater or Equal: " + isGreaterOrEqual); // Output: Is Greater or Equal: false
+        // Less than or equal to
+        boolean isLessOrEqual = (a <= b);
+        System.out.println("Is Less or Equal: " + isLessOrEqual); // Output: Is Less or Equal: true
 
-        // 2. Create double p = 5.5, q = 7.2 and compare them.
+        System.out.println("2. Create double p = 5.5, q = 7.2 and compare them.");
+        double p = 5.5;
+        double q = 7.2;
+        // Equal to
+        boolean isEqual2 = (p == q);
+        System.out.println("Is Equal: " + isEqual2); // Output: Is Equal: false
+        // Not equal to
+        boolean isNotEqual2 = (p != q);
+        System.out.println("Is Not Equal: " + isNotEqual2); // Output: Is Not Equal: true
+        // Greater than
+        boolean isGreater2 = (p > q);
+        System.out.println("Is Greater: " + isGreater2); // Output: Is Greater: false
+        // Less than
+        boolean isLess2 = (p < q);
+        System.out.println("Is Less: " + isLess2);
+        // Greater than or equal to
+        boolean isGreaterOrEqual2 = (p >= q);
+        System.out.println("Is Greater or Equal: " + isGreaterOrEqual2);
+        // Less than or equal to
+        boolean isLessOrEqual2 = (p <= q);
+        System.out.println("Is Less or Equal: " + isLessOrEqual2);
 
-        // 3. Create char c1 = 'A', c2 = 'B' and check if c1 < c2.
+        System.out.println("3. Create char c1 = 'A', c2 = 'B' and check if c1 < c2.");
+        char c1 = 'A';
+        char c2 = 'B';
+        boolean isLess3 = (c1 < c2);
+        System.out.println("Is Less: " + isLess3);
 
-        // 4. Check if (x < y) AND (x != y).
+        System.out.println("4. Check if (x < y) AND (x != y).");
+        int x = 10;
+        int y = 20;
+        boolean and = (x < y) && (x != y);
+        System.out.println("Is Less: " + and);
 
-        // 5. Compare two Strings using .equals() instead of ==.
+        System.out.println("5. Compare two Strings using .equals() instead of ==.");
+        String ju = "Julie";
+        System.out.println(ju.equals(ju));
 
-        // 6. Create three int variables and determine the largest.
+        System.out.println("6. Create three int variables and determine the largest.");
+        int max = Math.max(x,Math.max(a,b));
+        System.out.println("Math.max(x,Math.max(a,b)); return " + max);
     }
 }

@@ -24,6 +24,7 @@ public class LogicalE
 {
     public static void main(String[] args)
     {
+       /*
         boolean a = true;
         boolean b = false;
 
@@ -43,18 +44,30 @@ public class LogicalE
         System.out.println("\nLogical NOT (!):");
         System.out.println("!true = " + (!a));   // false
         System.out.println("!false = " + (!b));  // true
+        */
+
+        System.out.println("-------------------- Student Exercises --------------------");
+        System.out.println("1. Create boolean x = true, y = false and test &&, ||, ! operators.");
+        boolean x = true;
+        boolean y = false;
+        System.out.println("true && false = " + (x && y));  // false
+        System.out.println("true || false = " + (x || y));  // true
+        System.out.println("!true = " + (!x) );  // false
+        System.out.println("!false = " + (!y) );  // true
 
 
-        // -------------------- Student Exercises --------------------
-        // 1. Create boolean x = true, y = false and test &&, ||, ! operators.
+        System.out.println("2. Create a = true, b = false, c = true;\nevaluate: (a && b) || c and !(a || b) && c");
+        boolean a = true;
+        boolean b = false;
+        boolean c = true;
+        System.out.println("!(true && false') || true = " + (!(a && b) || c) );  // true
+        System.out.println("!(true || false) && true = " + (!(a || b) && c) );  // false
 
-        // 2. Create a = true, b = false, c = true; evaluate:
-        //    (a && b) || c and !(a || b) && c
+        System.out.println("3. Create int n = 15; check if n > 10 && n < 20,\nand n != 12 || n < 5.");
+        int n = 15;
+        System.out.println(" 15 > 10 && 15 < 20 = " + ( n > 10 && n < 20) );  // true
+        System.out.println(" 15 != 12 || 15 < 5 = " + ( n != 12 || n < 5) );  // true
 
-        // 3. Create int n = 15; check if n > 10 && n < 20,
-        //    and n != 12 || n < 5.
-
-        // 4. Combine multiple logical operators with parentheses
-        //    to test order of evaluation.
+        System.out.println("4. Combine multiple logical operators with parentheses to test order of evaluation.");
     }
 }

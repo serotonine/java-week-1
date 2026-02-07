@@ -35,6 +35,7 @@ public class UnaryE
         int y = 10;
         y--; // Decrement
 
+        /*
         System.out.println("Original a: " + a);
         System.out.println("Unary minus b: " + b);
         System.out.println("Unary plus c: " + c);
@@ -42,15 +43,30 @@ public class UnaryE
         System.out.println("Logical NOT notFlag: " + notFlag);
         System.out.println("Incremented x: " + x);
         System.out.println("Decremented y: " + y);
+        */
 
 
         // -------------------- Student Exercises --------------------
         // 1. Create int num = 8; apply unary minus and plus.
+        int num =8;
+        System.out.println("Unary minus: " + (-num));
+        System.out.println("Unary plus: " + (+num));
 
         // 2. Create boolean isOpen = false; invert it with !.
+        boolean isOpen = false;
+        System.out.println("Logical NOT: " + (!isOpen));
 
         // 3. Create int counter = 0; use pre-increment and post-increment.
+        int counter = 0;
+        int pre = ++counter;
+        System.out.println("pre = " + pre + " counter = "+ counter);
+        counter = 0;
+        int post = counter++;
+        System.out.println("post = " + post + " counter = "+ counter);
 
         // 4. Create int count = 5; use pre-
+        int count = 5;
+        int _pre = ++count;
+        System.out.println("pre = " + _pre + " count = "+ count);
     }
 }

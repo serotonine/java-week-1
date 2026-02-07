@@ -49,35 +49,59 @@ public class AssignmentE
 
 
         // -------------------- Student Exercises --------------------
-        // 1. Create an int variable b = 20 and use +=, -= with it.
-        System.out.println("After a %= 3: " + a);
+        int b = 20;
+        int increment = 10;
+        System.out.println(" int b = 20; " + "int increment = 10;");
+        System.out.println("1. Create an int variable b = 20 and use +=, -= with it.");
+        System.out.println("+= : " + incrementBy(b, increment, '+' ));
+        System.out.println("-= : " + incrementBy(b, increment, '-' ));
 
-        // 2. Create an int variable c = 15 and use *=, /= with it.
+         System.out.println("2. Create an int variable c = 15 and use *=, /= with it.");
+        b = 15;
+        System.out.println("*= : " + incrementBy(b, increment, '*' ));
+        System.out.println("/= : " + incrementBy(b, increment, '/' ));
 
-        // 3. Use %= with c to find remainder when divided by 4.
+         System.out.println("3. Use %= with c to find remainder when divided by 4.");
+        System.out.println("15 % 4: " + incrementBy(b, 4, '%' ));
 
-        // 4. Create a double variable d = 12.5, then use += and *=.
+         System.out.println("4. Create a double variable d = 12.5, then use += and *=.");
+         double d = 12.5;
+        System.out.println("+=: " + incrementBy(d, increment, '+' ));
+        System.out.println("+=: " + incrementBy(d, increment, '*' ));
 
-        // 5. Create x = 7, double it with +=, then square it with *=.
+         System.out.println("5. Create x = 7, double it with +=, then square it with *=.");
+        int x = 7;
+        System.out.println("+=: " + incrementBy(x, x, '+' ));
+        System.out.println("*=: " + incrementBy(x, x, '*' ));
 
-        // 6. Start y = 50, apply -= 10, *= 2, /= 5, %= 6 step by step.
+         System.out.println("6. Start y = 50, apply -= 10, *= 2, /= 5, %= 6 step by step.");
+         int y = 50;
+         double v = incrementBy(incrementBy(y, 10, '-' ), 2, '*');
+         double result = incrementBy(incrementBy(v, 5, '/' ), 6, '%');
+
+        System.out.println("result: " + result);
     }
-    private double incrementBy(int nb, int increment, char op ){
+    private static double incrementBy(double nb, int increment, char op ){
 
         switch (op){
             case '+':
                 nb += increment;
                 break;
             case '-':
+                nb -= increment;
                 break;
             case  '*':
+                nb *= increment;
                 break;
             case '/':
+                nb /= increment;
+                break;
+            case '%':
+                nb = nb % increment;
                 break;
             default:
                 return (double) nb;
         }
         return (double) nb;
-
     }
 }
