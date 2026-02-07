@@ -50,6 +50,7 @@ public class AssignmentE
 
         // -------------------- Student Exercises --------------------
         // 1. Create an int variable b = 20 and use +=, -= with it.
+        System.out.println("After a %= 3: " + a);
 
         // 2. Create an int variable c = 15 and use *=, /= with it.
 
@@ -60,5 +61,23 @@ public class AssignmentE
         // 5. Create x = 7, double it with +=, then square it with *=.
 
         // 6. Start y = 50, apply -= 10, *= 2, /= 5, %= 6 step by step.
+    }
+    private double incrementBy(int nb, int increment, char op ){
+
+        switch (op){
+            case '+':
+                nb += increment;
+                break;
+            case '-':
+                break;
+            case  '*':
+                break;
+            case '/':
+                break;
+            default:
+                return (double) nb;
+        }
+        return (double) nb;
+
     }
 }
