@@ -29,7 +29,7 @@ public class IfElseE
 {
     public static void main(String[] args)
     {
-        int number = 10;
+        /*int number = 10;
 
         if (number > 0)
         {
@@ -43,16 +43,44 @@ public class IfElseE
         {
             System.out.println("The number is zero.");
         }
+*/
+        /* 4. Create a double variable temperature.
+            *    - If temperature > 30, print "Hot".
+            *    - Else if temperature >= 20, print "Warm".
+            *     - Else if temperature >= 10, print "Belgium".
+            *     - Else, print "Cold".
+            *
+            * Bonus:
+ * 5. Combine two conditions using logical operators:
+ *    - Check if a number n is positive **and** even.
+            */
+        int[] numbers = {-5, 4, -55, 24, 36, 14, 11, 0};
 
-        // -------------------- Student Exercises --------------------
-        // 1. Check if x is even or odd.
+        System.out.println("4. Create a double variable temperature.");
+        for(int temp:numbers){
+            if(temp > 30){
+                System.out.println(temp + "°"+ " Hot Summertime");
+            }
+            else if(temp >= 20){
+                System.out.println(temp + "°"+ " Warm Spring");
+            }
+            else if(temp >= 10){
+                System.out.println(temp + "°"+ " Welcome to Belgium!");
+            }
+            else if(temp > 0){
+                System.out.println(temp + "°"+ " Wintertime");
+            }
+            else{
+                System.out.println(temp + "°"+ " Cold Brrrrr !!!");
+            }
+        }
+        System.out.println("5. Check if n is positive AND even using logical operators.");
+        for(int nb:numbers){
+            boolean evenIsPositive = (nb >= 0) && (nb % 2 == 0) ;
+            System.out.println(nb + " is positive and even "+ evenIsPositive);
 
-        // 2. Check age and print "Adult" or "Minor".
+        }
 
-        // 3. Assign grades based on score using if-else if-else.
 
-        // 4. Check temperature and print "Hot", "Warm", or "Cold".
-
-        // 5. Check if n is positive AND even using logical operators.
     }
 }
